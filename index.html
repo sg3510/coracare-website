@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+    <title>Coracare</title>
+</head>
+<body>
+    <div id="main">
+   	  <div class="container">
+        	<div id="header">
+				<div id="logo" align="center"> <a href="index.html"><img src="images/logo.png" alt="" width="449" height="97" border="0" align="middle" /></a>
+          		</div>
+  <div id="nav">
+                	<ul id="menu">
+						<li id="home" class="home"><a class="selected" onclick="$('#home').fadeTo(50,0.3).delay(70).fadeTo(50,1);" href="#">Home</a></li>
+						<li id="about" class="about"><a onclick="$('#about').fadeTo(50,0.3).delay(70).fadeTo(50,1);LoadAbout();" href="#">About</a></li>
+						<li id ="product" class="product"><a onclick="$('#product').fadeTo(50,0.3).delay(70).fadeTo(50,1);LoadProduct();" href="#">Product</a></li>
+               	  	   <li class="service"><a onclick="LoadService();" href="#">Service</a></li>
+               	  	   <li class="media"><a onclick="LoadFAQ();" href="#">FAQ</a></li>
+                       <li class="report"><a onclick="LoadReport();" href="#">Report</a></li>
+					</ul>
+                    <div id="login"><a href="patient.html" style="text-decoration: none; color:#FFFFFF;"> Patient Login </a></div>
+              </div>
+          	</div>
+        	<!-- InstanceBeginEditable name="MainEdit" -->
+      <div id="content">
+        <div id="calmsea">
+        <!--
+        <img src="images/calmsea.jpg" style="opacity:0.8" alt="" width="681" height="375" />
+        -->
+        <h5>WE'RE HERE FOR EACH STEP</h5><!--<h2>
+              Here at Coracare we strive to help you without impacting your daily life. 
+              </h2>-->
+        </div>
+        <a style="text-decoration: none; color:#FFFFFF;" onclick="LoadProduct();" href="#"><div id="ecg"></div></a>
+        
+        <a style="text-decoration: none; color:#FFFFFF;" onclick="$('#box1').fadeTo(50,0.3).delay(70).fadeTo(50,1);LoadProduct();" href="#">
+        <div id="box1">
+          <h5>
+          WE'RE ABOUT TECHNOLOGY</h5>
+          <h2>The CX50 heart-monitor combines the latest algorithms with state of the art hardware.</h2>
+        </div></a>
+        <div id="hand"></div>
+        <div id="ecggraph"></div>
+        <div id="patient"></div>
+        <div id="box2">
+        
+          <h5>WE OFFER SOLUTIONS</h5>
+          <h2>
+            We offer an all inclusive package for peace of mind. Coracare is more than the CX50 heart monitor, it's also the personalised suggestions we give you everyday as well as a custom health report, just for you.
+          </h2>
+        </div>
+        <div id="box3">
+          <h5>
+            FOR YOU
+          </h5>
+          <h2>
+            Our heart monitors are as comfortable as can be and there's a good reason for that - we want to avoid the intrusive feeling that users of similar devices have complained about.
+          </h2>
+        </div>
+        <div id="box4">
+          <h5>
+            WE CARE
+          </h5>
+          <h2>
+            You are who we care about the most. That's why we have dedicated teams
+            monitoring your health.
+          </h2>
+        </div><script type="text/javascript">
+//<![CDATA[
+                        //+ Jonas Raoni Soares Silva
+                        //@ http://jsfromhell.com/array/shuffle [v1.0]
+
+                        shuffle = function(o){ //v1.0
+                                for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+                                return o;
+                        };
+                        var order = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+                         $('#ecg').fadeTo(0,0).delay(order[1]*fspeed).fadeTo(400,1);
+                         $('#box1').fadeTo(0,0).delay(order[2]*fspeed).fadeTo(400,1);
+                         $('#calmsea').fadeTo(0,0).delay(order[3]*fspeed).fadeTo(400,1);
+                         $('#box2').fadeTo(0,0).delay(order[4]*fspeed).fadeTo(400,1);
+                         $('#box3').fadeTo(0,0).delay(order[5]*fspeed).fadeTo(400,1);
+                         $('#box4').fadeTo(0,0).delay(order[6]*fspeed).fadeTo(400,1);
+                         $('#hand').fadeTo(0,0).delay(order[7]*fspeed).fadeTo(400,1);
+                         $('#patient').fadeTo(0,0).delay(order[0]*fspeed).fadeTo(400,1);
+                         $('#ecggraph').fadeTo(0,0).delay(order[8]*fspeed).fadeTo(400,1);
+        //]]>
+        </script> <script language="javascript" type="text/javascript">
+//<![CDATA[
+        var iNdex;
+        function LoadAbout() {
+        FadeOut();
+        setTimeout("window.location.href='about.html';",1200);  
+        }
+        function LoadProduct() {
+        FadeOut();
+        setTimeout("window.location.href='product.html';",1200);
+        }
+        function LoadService() {
+        FadeOut();
+        setTimeout("window.location.href='service.html';",1200);
+        }
+        function LoadFAQ() {
+        FadeOut();
+        setTimeout("window.location.href='faq.html';",1200);
+        }
+		function LoadReport() {
+        FadeOut();
+        setTimeout("window.location.href='report.html';",1200);
+        }
+        function FadeOut() {
+                        var order = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9]);
+                         $('#ecg').fadeTo(0,1).delay(order[1]*fspeed).fadeTo(200,0);
+                         $('#box1').fadeTo(0,1).delay(order[2]*fspeed).fadeTo(200,0);
+                         $('#calmsea').fadeTo(0,1).delay(order[3]*fspeed).fadeTo(200,0);
+                         $('#box2').fadeTo(0,1).delay(order[4]*fspeed).fadeTo(200,0);
+                         $('#box3').fadeTo(0,1).delay(order[5]*fspeed).fadeTo(200,0);
+                         $('#box4').fadeTo(0,1).delay(order[6]*fspeed).fadeTo(200,0);
+                         $('#hand').fadeTo(0,1).delay(order[7]*fspeed).fadeTo(200,0);
+                         $('#patient').fadeTo(0,1).delay(order[0]*fspeed).fadeTo(200,0);
+                         $('#ecggraph').fadeTo(0,1).delay(order[8]*fspeed).fadeTo(200,0);
+						 if (navigator.userAgent.indexOf("Firefox")!=-1)
+						 {
+						 $('#ecg').delay(10*fspeed).fadeTo(200,1);
+                         $('#box1').delay(10*fspeed).fadeTo(200,1);
+                         $('#calmsea').delay(10*fspeed).fadeTo(200,1);
+                         $('#box2').delay(10*fspeed).fadeTo(200,1);
+                         $('#box3').delay(10*fspeed).fadeTo(200,1);
+                         $('#box4').delay(10*fspeed).fadeTo(200,1);
+                         $('#hand').delay(10*fspeed).fadeTo(200,1);
+                         $('#patient').delay(10*fspeed).fadeTo(200,1);
+                         $('#ecggraph').delay(10*fspeed).fadeTo(200,1);
+						 }
+                         iNdex = 1;
+        }
+        //]]>
+        </script>
+      </div><!-- InstanceEndEditable --></div>
+
+
+
+    </div>
+    <div id="footer">
+    	<div class="container">
+        	&copy Coracare 2012 | Contact Us
+        </div>
+
+    </div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,523 @@
+@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis:500);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:600);
+
+body {
+	margin:0px; padding:0px;
+	width:99.6%;
+	background-color:#1b4d7d;
+	background:#1b4d7d url(../images/bg.png) repeat-x; 
+}
+
+@font-face {
+font-family: Univers;
+src: url("../font/Univers LT 55 Roman.ttf") format("truetype");
+}
+#main {
+	/*background-color:#083f86;*/
+}
+#logo{
+	height:110px;
+	margin-left:-50px;
+	text-decoration:none;
+	padding-top: 10px;
+	border:none;
+}
+#nav{
+	background:url(../images/m-bg.png);
+	width:950px;
+	min-height:30px;
+}
+ul#menu{
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+	clear:both;
+}
+#menu li{overflow:hidden; text-indent:-9999px; display:inline; float:left; margin-right:0px;}
+#menu li a{background:url('../images/menu-sprite.png') no-repeat; width:100%; height:100%; display:block;}
+
+			/* Home Button */
+			#menu li.home{width:80px; height:30px;}
+				#menu li.home a{background-position:0px 0px;}
+				#menu li.home a:hover{background-position:0px -30px;}
+				#menu li.home a.selected{background-position:0px -60px;}
+
+			/* About Button */
+			#menu li.about{width:76px; height:30px;}
+				#menu li.about a{background-position:-80px 0px;}
+				#menu li.about a:hover{background-position:-80px -30px;}
+				#menu li.about a.selected{background-position:-80px -60px;}
+				
+			/* Product Button */
+			#menu li.product{width:68px; height:30px;}
+				#menu li.product a{background-position:-156px 0px;}
+				#menu li.product a:hover{background-position:-156px -30px;}
+				#menu li.product a.selected{background-position:-156px -60px;}
+				
+			/* Service Button */
+			#menu li.service{width:56px; height:30px;}
+				#menu li.service a{background-position:-224px 0px;}
+				#menu li.service a:hover{background-position:-224px -30px;}
+				#menu li.service a.selected{background-position:-224px -60px;}			
+
+			/* FAQ */
+			#menu li.media{width:50px; height:30px;}
+				#menu li.media a{background-position:-278px 0px;}
+				#menu li.media a:hover{background-position:-278px -30px;}
+				#menu li.media a.selected{background-position:-278px -60px;}
+				/* Report */
+			#menu li.report{width:60px; height:30px;}
+				#menu li.report a{background-position:-328px 0px;}
+				#menu li.report a:hover{background-position:-328px -30px;}
+				#menu li.report a.selected{background-position:-328px -60px;}	
+
+#content{
+	height:752px;
+}
+/*slideshow*/
+#wrapper {width:330px; height: 480px; margin:0px auto; float:right;}
+#slidecontainer {position:relative; padding:0px; height:380px;}
+.sliderbutton {float:left; width:10px; height:10px; cursor:pointer}
+#slideleft {background:url(images/icons.gif) -50px -265px no-repeat}
+#slideleft:hover {background-position:-0 -50px}
+#slideright {background:url(images/icons.gif) 0 90px no-repeat}
+#slideright:hover {background-position:-50px 90px}
+#slider {float:left; position:relative; overflow:auto; width:300px; height:493px}
+#slider ul {
+	position:absolute;
+	list-style:none;
+	top:9px;
+	left:-12px
+}
+#slider li {float:left; width:300px; height:30px}
+.pagination {position:absolute; top:1px; right:1px; list-style:none; height:0px}
+.pagination li {float:left; cursor:pointer; height:8px; width:8px; background:#06F0; margin:0 4px 0 0; border:1px solid #fff}
+.pagination li:hover, li.current {background:#fff}
+/*slideshow end*/
+#calmsea{
+	background-image:url(../images/calmsea.jpg);
+	float:left;
+	height:375px;
+	width:681px;
+}
+#calmsea:hover {
+	
+	/*background-image:url(../images/calmsea.jpg);*/
+}
+#calmsea h5 {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size:30px;
+	color:#FFF;
+	padding:280px 20px 0px 0px;
+	text-align:right;
+}
+#calmsea h2 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-top:-50px;
+	padding:0px 20px 0px 0px;
+	text-align:right;
+}
+#ecg{
+	background:url(../images/ecg.jpg);
+	float:left;
+	height:207px;
+	width:269px;
+	display:block;
+}
+#box1{
+	background: #26639e;
+	float:left;
+	height:168px;
+	width:269px;
+	display:block;
+}
+#box1:hover {
+	background: #3574b1;
+	/*
+	float:left;
+	height:168px;
+	width:269px;
+	display:block;
+	*/
+}
+#box1 h5 {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size:30px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:6px;
+	padding:0px px 0px 0px;
+	text-align:left;
+}
+#box1 h2 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-top:-50px;
+	margin-left:8px;
+	padding:0px 20px 0px 0px;
+	text-align:left;
+}
+#hand{
+	background:url(../images/hand.jpg);
+	float:left;
+	height:245px;
+	width:285px;
+	display:block;
+}
+#ecggraph{
+	background:url(../images/ecg-graph.jpg);
+	float:left;
+	height:181px;
+	width:267px;
+	display:block;
+}
+#patient{
+	background:url(../images/patient-care.jpg);
+	float:left;
+	height:210px;
+	width:398px;
+	display:block;
+}
+#box4{
+	background: #255b90;
+	float:right;
+	height:132px;
+	width:285px;
+	display:block;
+}
+#box4:hover{
+	background: #2a6096;
+}
+#box4 h5 {
+	/*font-family: 'Cabin Condensed', sans-serif;*/
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size:30px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:10px;
+	padding:0px px 0px 0px;
+	text-align:left;
+}
+#box4 h2 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-top:-50px;
+	margin-left:10px;
+	padding:0px 20px 0px 0px;
+	text-align:left;
+}
+#box3{
+	background: #0f4a83;
+	float:right;
+	height:196px;
+	width:267px;
+	margin-top:-29px;
+	display:block;
+}
+#box3:hover{
+	background: #16538e;
+}
+#box3 h5 {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size:30px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:10px;
+	padding:0px px 0px 0px;
+	text-align:left;
+}
+#box3 h2 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-top:-50px;
+	margin-left:10px;
+	padding:0px 20px 0px 0px;
+	text-align:left;
+}
+#box2{
+	background: #1a5792;
+	float:right;
+	height:167px;
+	width:398px;
+	display:block;
+}
+#box2:hover{
+	background: #23609c;
+}
+#box2 h5 {
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size:30px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:10px;
+	padding:0px px 0px 0px;
+	text-align:left;
+}
+#box2 h2 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:18px;
+	color:#FFF;
+	margin-top:-50px;
+	margin-left:10px;
+	padding:0px 20px 0px 0px;
+	text-align:left;
+}
+#footer {
+	color:white;
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:14px;
+	padding-top:10px;
+	text-align:right;
+}
+.container {
+	width:950px;
+	margin:0 auto;
+	/*border:1px solid red;*/
+}
+#login{
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#FFF;
+	padding:4px 4px 0px 0px;
+	text-align:right;
+}
+/* LARGE TEXTBOX*/
+ 
+#texttop{
+    background:url(../images/textcontenttop.png) repeat-y top;
+    margin-top:10px;
+	padding-top:10px;
+    width:950px;
+    clear:both;
+}
+#texttop-blue{
+    background:url(../images/textcontenttop-blue.png) repeat-y top;
+    margin-top:10px;
+	padding-top:10px;
+    width:950px;
+    clear:both;
+}
+#textcontent{
+    background:url(../images/textcontent.png) repeat bottom;
+	padding:1px 0px 1px 0px;
+    width:950px;/*636px*/
+    clear:both;
+    min-height:50px;
+}
+#textcontent-blue{
+    background:url(../images/textcontent-blue.png) repeat bottom;
+	padding:1px 0px 1px 0px;
+    width:950px;/*636px*/
+    clear:both;
+    min-height:50px;
+}
+#textcontent-blue h5 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:26px;
+	color:#2D3573;
+	margin-top:2px;
+	margin-left:0px;
+	padding:0px px 0px 0px;
+	text-align:left;
+    padding-top: 0px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #083f86;
+}
+#textcontent h5 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:26px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:0px;
+	padding:0px px 0px 0px;
+	text-align:left;
+    padding-top: 0px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #083f86;
+}
+#textcontent p {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#FFF;
+	margin-top: -10px;
+	margin-left:15px;
+	padding:0px 0px 0px 0px;
+	margin-right:10px;
+	text-align:justify;
+}
+#textcontent-blue p {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#000;
+	margin-top: -10px;
+	margin-left:15px;
+	padding:0px 0px 0px 0px;
+	margin-right:10px;
+	text-align:justify;
+}
+#textcontent ul {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#FFF;
+	margin-top: -10px;
+	margin-left:30px;
+	margin-right:20px;
+	padding:0px 0px 0px 0px;
+	text-align:justify;
+}
+#textfooter{
+    background:url(../images/textfooter.png) no-repeat;
+	margin-top:-12px;
+    width:950px;
+    height:12px;
+    clear:both;
+}
+#textfooter-blue{
+    background:url(../images/textfooter-blue.png) no-repeat;
+	margin-top:-12px;
+    width:950px;
+    height:12px;
+    clear:both;
+}
+/*HALF TEXTBOX*/
+#boxseperate{
+    margin-top:10px;
+	padding-top:10px;
+    width:12px;
+	display:block;
+	float:left;
+}
+#boxtop{
+    background:url(../images/textcontenttop-box.png) no-repeat;
+    margin-top:10px;
+	padding-top:10px;
+    width:469px;
+	display:block;
+	float:left;
+}
+#boxtop-blue{
+    background:url(../images/textcontenttop-box-blue.png) no-repeat;
+    margin-top:10px;
+	padding-top:10px;
+    width:469px;
+	display:block;
+	float:left;
+}
+#boxcontent{
+    background:url(../images/textcontent-box.png) repeat bottom;
+	padding:1px 0px 1px 0px;
+	margin-right:6px;
+    width:469px;
+    /*height:300px;*/
+	display:block;
+	float:left;
+}
+#boxcontent-blue{
+    background:url(../images/textcontent-box-blue.png) repeat bottom;
+	padding:1px 0px 1px 0px;
+	margin-right:6px;
+    width:469px;
+    /*height:300px;*/
+	display:block;
+	float:left;
+}
+#boxcontent-blue h5 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:26px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:0px;
+	padding:0px px 0px 0px;
+	text-align:left;
+    padding-top: 0px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #083f86;
+}
+#boxcontent h5 {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:26px;
+	color:#FFF;
+	margin-top:2px;
+	margin-left:0px;
+	padding:0px px 0px 0px;
+	text-align:left;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #083f86;
+}
+
+#boxcontent p {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#FFF;
+	margin-top: -10px;
+	margin-left:15px;
+	padding:0px 0px 0px 0px;
+	text-align:justify;
+	margin-right:10px
+}
+#boxcontent ul {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:15px;
+	color:#FFF;
+	margin-top: -10px;
+	margin-left:30px;
+	margin-right:15px;
+	padding:0px 0px 0px 0px;
+	text-align:justify;
+}
+#boxfooter{
+    background:url(../images/textfooter-box.png);
+	margin-top:-12px;
+	margin-right:6px;
+    width:469px;
+    height:12px;
+	display:block;
+	float:left;
+}
+#boxfooter-blue{
+    background:url(../images/textfooter-box-blue.png);
+	margin-top:-12px;
+	margin-right:6px;
+    width:469px;
+    height:12px;
+	float:left;
+}
+#boxcontent-blue p {
+	font-family: 'Terminal Dosis', sans-serif;
+	font-size:16px;
+	color:#FFF;
+	margin-top: -10px;
+	margin-left:15px;
+	padding:0px 0px 0px 0px;
+	margin-right:10px;
+	text-align:justify;
+}
+#endboxfooter{
+	margin-top:-12px;
+    width:950px;
+    height:12px;
+    clear:both;
+}

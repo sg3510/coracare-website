@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+    <title>Coracare</title>
+</head>
+<body>
+    <div id="main">
+   	  <div class="container">
+        	<div id="header">
+				<div id="logo" align="center"> <a href="index.html"><img src="images/logo.png" alt="" width="449" height="97" border="0" align="middle" /></a>
+          		</div>
+  <div id="nav">
+                	<ul id="menu">
+						<li class="home"><a href="index.html">Home</a></li>
+						<li class="about"><a href="about.html">About</a></li>
+						<li class="product"><a href="product.html">Product</a></li>
+               	  	   <li class="service"><a href="service.html">Product</a></li>
+               	  	   <li class="media"><a href="faq.html">Media</a></li>
+                       <li class="report"><a class="selected" href="report.html">Report</a></li>
+					</ul>
+                    <div id="login"><a href="patient.html" style="text-decoration: none; color:#FFFFFF;"> Patient Login </a></div>
+              </div>
+          	</div>
+        	<!-- InstanceBeginEditable name="MainEdit" -->
+            <div id="block_content">
+            <div id="media_box1">    
+            <!-- 1ST CONTENT BOX -->
+    		<div id="texttop">
+     			<div id="textcontent" onkeypress="return checkSubmit(event)">
+                <center>
+                <script type = "text/javascript">
+                function checkSubmit(e)
+{
+   if(e && e.keyCode == 13)
+   {
+	   validate();
+      //document.forms[0].submit();
+   }
+}
+</script>
+                <script type = "text/javascript">
+
+// Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see 
+//the valid usernames/passwords and the redirect url simply with View Source.  
+// And the user can obtain another three tries simply by refreshing the page.  
+//So do not use for anything serious!
+
+var count = 2;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+
+var unArray = ["Alex.Saunders", "Coracare", "alex.saunders", "alex.Saunders"];  // as many as you like - no comma after final entry
+var pwArray = ["password", "password", "password", "password"];  // the corresponding passwords;
+
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+
+if (valid) {
+//alert ("Login was successful");
+window.location = "patient_welcome.html";
+return false;
+}
+
+var t = " tries";
+if (count == 1) {t = " try"}
+
+if (count >= 1) {
+//alert ("Invalid username and/or password.  You have " + count + t + " left.");
+alert ("Invalid username and/or password.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+//count --;
+}
+
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+
+}
+
+</script>
+
+<form style="width:550px; margin-top:15px;" name = "myform">
+<p>username 
+  <input type="text" name="username"> password <input type="password" name="pword">
+  <input type="button" value="Log In" name="Submit" onclick= "validate()" />
+</p>
+</form>
+                </center>
+                <p style="font-size:14px"><strong>Note</strong>: to use the demonstration account please login using the credentials &quot;Alex.Saunders&quot; and &quot;password&quot; as respective username and password.</p>
+   			  </div>
+    		</div>
+    		<div id="textfooter"></div>
+    		<!-- 1ST CONTENT BOX END -->
+            </div>
+            </div>
+			<script type="text/javascript">
+				//alert(document.referer);
+				//alert(document.referrer);
+				if(document.referrer.indexOf("index") > 0){ 
+				$('#media_box1').fadeTo(0,0).delay(fspeed).fadeTo(400,1);
+				}else{
+
+				}
+
+              </script>	
+        	<!-- InstanceEndEditable --></div>
+
+
+
+    </div>
+    <div id="footer">
+    	<div class="container">
+        	&copy Coracare 2012 | Contact Us
+        </div>
+
+    </div>
+</body>
+<!-- InstanceEnd --></html>
